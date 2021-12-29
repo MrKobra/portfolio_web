@@ -31,6 +31,18 @@ section
       background: $active
       transition: all .2s linear
 
+.main-header
+  &.fix
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 10
+  li
+    &.nav-item.active
+      a
+        color: $active
+
 .about
   p
     margin: 10px 0 0

@@ -33,6 +33,17 @@ section h2:before {
   transition: all 0.2s linear;
 }
 
+.main-header.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.main-header li.nav-item.active a {
+  color: #1903b0;
+}
+
 .about p {
   margin: 10px 0 0;
   font-size: 18px;

@@ -10,110 +10,112 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="navbar-light bg-light">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="collapse navbar-collapse justify-content-center">
-                    <ul class="navbar-nav justify-content-center">
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">Обо мне</a>
+    <div class="wrapper">
+        <header class="main-header navbar-light bg-light">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">Обо мне</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#portfolio" class="nav-link">Портфолио</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="heading">
+                    <h2>Обо мне</h2>
+                </div>
+                <p>Имеется опыт в разработке простейших веб-сайтов (блогов, сайтов-визиток, простых интернет магазинов). </p>
+                <p>Технологический стек:</p>
+                <ul>
+                    <li>HTML 5</li>
+                    <li>CSS</li>
+                    <li>Sass</li>
+                    <li>Less</li>
+                    <li>Java Script</li>
+                    <li>jQuery</li>
+                    <li>PHP</li>
+                    <li>WordPress</li>
+                </ul>
+                <p>Около 2 лет работал в небольшой команде, специализирующуюся на разработке сайтов под ключ (выполнял роль Fullstack разработчика).</p>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="heading">
+                    <h2>Портфолио</h2>
+                </div>
+                <div class="portfolio-container">
+                    <div class="portfolio-card">
+                        <a href="img/removal_big.png" class="portfolio-card_link">
+                            <div class="portfolio-card_img">
+                                <img src="img/removal_thumb.png" class="img-fluid" alt="Скриншот сайта">
+                            </div>
+                        </a>
+                        <div class="portfolio-card_info">
+                            <h3>Правильный переезд</h3>
+                            <p>Интернет-магазин</p>
+                            <div class="portfolio-card_btn">
+                                <a href="https://pravilnyypereezd.ru/" class="btn" target="_blank">Перейти на сайт</a>
+                                <a href="" class="btn" target="_blank">Проект на GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <a href="img/kreslo-v-dom_big.png" class="portfolio-card_link">
+                            <div class="portfolio-card_img">
+                                <img src="img/kreslo-v-dom_thumb.png" class="img-fluid" alt="Скриншот сайта">
+                            </div>
+                        </a>
+                        <div class="portfolio-card_info">
+                            <h3>Кресло в дом</h3>
+                            <p>Интернет магазин</p>
+                            <div class="portfolio-card_btn">
+                                <a href="https://kreslo-v-dom.ru" class="btn" target="_blank">Перейти на сайт</a>
+                                <a href="" class="btn" target="_blank">Проект на GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="heading">
+                    <h2>Контакты</h2>
+                </div>
+                <div class="contact-container">
+                    <ul>
+                        <li>
+                            <strong>E-mail: </strong>
+                            <a href="mailto:red.kras.2013@gmail.com" target="_blank">red.kras.2013@gmail.com</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link">Портфолио</a>
+                        <li>
+                            <strong>Telegram: </strong>
+                            <a href="https://t.me/mr_kobra" target="_blank">@mr_kobra</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Контакты</a>
+                        <li>
+                            <strong>What`s app: </strong>
+                            <a href="https://wa.me/79531990282" target="_blank">7(953)199-02-82</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
-
-    <section class="about" id="about">
-        <div class="container">
-            <div class="heading">
-                <h2>Обо мне</h2>
             </div>
-            <p>Имеется опыт в разработке простейших веб-сайтов (блогов, сайтов-визиток, простых интернет магазинов). </p>
-            <p>Технологический стек:</p>
-            <ul>
-                <li>HTML 5</li>
-                <li>CSS</li>
-                <li>Sass</li>
-                <li>Less</li>
-                <li>Java Script</li>
-                <li>jQuery</li>
-                <li>PHP</li>
-                <li>WordPress</li>
-            </ul>
-            <p>Около 2 лет работал в небольшой команде, специализирующуюся на разработке сайтов под ключ (выполнял роль Fullstack разработчика).</p>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="heading">
-                <h2>Портфолио</h2>
-            </div>
-            <div class="portfolio-container">
-                <div class="portfolio-card">
-                    <a href="img/removal_big.png" class="portfolio-card_link">
-                        <div class="portfolio-card_img">
-                            <img src="img/removal_thumb.png" class="img-fluid" alt="Скриншот сайта">
-                        </div>
-                    </a>
-                    <div class="portfolio-card_info">
-                        <h3>Правильный переезд</h3>
-                        <p>Интернет-магазин</p>
-                        <div class="portfolio-card_btn">
-                            <a href="https://pravilnyypereezd.ru/" class="btn" target="_blank">Перейти на сайт</a>
-                            <a href="" class="btn" target="_blank">Проект на GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <a href="img/kreslo-v-dom_big.png" class="portfolio-card_link">
-                        <div class="portfolio-card_img">
-                            <img src="img/kreslo-v-dom_thumb.png" class="img-fluid" alt="Скриншот сайта">
-                        </div>
-                    </a>
-                    <div class="portfolio-card_info">
-                        <h3>Кресло в дом</h3>
-                        <p>Интернет магазин</p>
-                        <div class="portfolio-card_btn">
-                            <a href="https://kreslo-v-dom.ru" class="btn" target="_blank">Перейти на сайт</a>
-                            <a href="" class="btn" target="_blank">Проект на GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="heading">
-                <h2>Контакты</h2>
-            </div>
-            <div class="contact-container">
-                <ul>
-                    <li>
-                        <strong>E-mail: </strong>
-                        <a href="mailto:red.kras.2013@gmail.com" target="_blank">red.kras.2013@gmail.com</a>
-                    </li>
-                    <li>
-                        <strong>Telegram: </strong>
-                        <a href="https://t.me/mr_kobra" target="_blank">@mr_kobra</a>
-                    </li>
-                    <li>
-                        <strong>What`s app: </strong>
-                        <a href="https://wa.me/79531990282" target="_blank">7(953)199-02-82</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="main-footer bg-light">
         <div class="container">
