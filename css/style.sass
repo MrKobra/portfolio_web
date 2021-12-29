@@ -11,9 +11,25 @@ $active: #1903b0
 
 section
   padding: 50px 0
+  &.current-block
+    h2
+      &:before
+        width: 100%
   h2
     font-size: 36px
     margin: 0
+    position: relative
+    padding-bottom: 10px
+    display: inline-block
+    &:before
+      content: ''
+      width: 50px
+      height: 2px
+      bottom: 0
+      position: absolute
+      left: 0
+      background: $active
+      transition: all .2s linear
 
 .about
   p
@@ -81,3 +97,10 @@ section
           &:hover
             color: $active
             border-color: $active
+
+.main-footer
+  padding: 15px 0
+  p
+    text-align: center
+    margin-bottom: 0
+    font-size: 14px

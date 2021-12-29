@@ -12,9 +12,25 @@
 section {
   padding: 50px 0;
 }
+section.current-block h2:before {
+  width: 100%;
+}
 section h2 {
   font-size: 36px;
   margin: 0;
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+section h2:before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  background: #1903b0;
+  transition: all 0.2s linear;
 }
 
 .about p {
@@ -95,6 +111,15 @@ section h2 {
 .contact-container ul li a:hover {
   color: #1903b0;
   border-color: #1903b0;
+}
+
+.main-footer {
+  padding: 15px 0;
+}
+.main-footer p {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
