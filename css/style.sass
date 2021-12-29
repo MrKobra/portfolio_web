@@ -1,9 +1,19 @@
 $active: #1903b0
 
+.btn
+  color: #000000
+  padding: 7px 0 10px
+  width: 200px
+  border: 2px solid $active
+  &:hover
+    background: $active
+    color: #ffffff
+
 section
   padding: 50px 0
   h2
     font-size: 36px
+    margin: 0
 
 .about
   p
@@ -27,3 +37,30 @@ section
         top: 50%
         background: $active
         margin-top: -1px
+
+.portfolio
+  &-container
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    row-gap: 50px
+  &-card
+    display: flex
+    align-items: center
+    &_link
+      flex-basis: 300px
+    &_info
+      box-sizing: border-box
+      padding-left: 50px
+      h3
+        font-size: 24px
+        margin: 0
+        line-height: 1
+      p
+        font-size: 16px
+        margin: 15px 0 0
+        line-height: 1
+    &_btn
+      display: flex
+      column-gap: 15px
+      margin-top: 20px

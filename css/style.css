@@ -1,8 +1,20 @@
+.btn {
+  color: #000000;
+  padding: 7px 0 10px;
+  width: 200px;
+  border: 2px solid #1903b0;
+}
+.btn:hover {
+  background: #1903b0;
+  color: #ffffff;
+}
+
 section {
   padding: 50px 0;
 }
 section h2 {
   font-size: 36px;
+  margin: 0;
 }
 
 .about p {
@@ -29,6 +41,39 @@ section h2 {
   top: 50%;
   background: #1903b0;
   margin-top: -1px;
+}
+
+.portfolio-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.portfolio-card {
+  display: flex;
+  align-items: center;
+}
+.portfolio-card_link {
+  flex-basis: 300px;
+}
+.portfolio-card_info {
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.portfolio-card_info h3 {
+  font-size: 24px;
+  margin: 0;
+  line-height: 1;
+}
+.portfolio-card_info p {
+  font-size: 16px;
+  margin: 15px 0 0;
+  line-height: 1;
+}
+.portfolio-card_btn {
+  display: flex;
+  column-gap: 15px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
