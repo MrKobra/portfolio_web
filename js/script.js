@@ -62,9 +62,11 @@ $(document).ready(function() {
             callbacks: {
                 open: function() {
                     $('.popup-portfolio_img-wrapper').append('<img src="'+full+'">');
+                    $('body').addClass('open-popup');
                 },
                 close: function() {
                     $('.popup-portfolio_img-wrapper img').remove();
+                    $('body').removeClass('open-popup');
                 }
             }
         });
