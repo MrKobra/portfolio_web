@@ -59,14 +59,13 @@ $(document).ready(function() {
         var full = $(this).data('full');
         $(this).magnificPopup({
             type: 'inline',
+            fixedContentPos: true,
             callbacks: {
                 open: function() {
                     $('.popup-portfolio_img-wrapper').append('<img src="'+full+'">');
-                    $('body').addClass('open-popup');
                 },
                 close: function() {
                     $('.popup-portfolio_img-wrapper img').remove();
-                    $('body').removeClass('open-popup');
                 }
             }
         });

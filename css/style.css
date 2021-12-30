@@ -1,8 +1,3 @@
-body.open-popup {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 .btn {
   color: #000000;
   padding: 7px 0 10px;
@@ -204,6 +199,15 @@ section h2:before {
 
   .portfolio-card_btn {
     column-gap: 10px;
+  }
+
+  .popup-portfolio_img {
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .popup-portfolio_img-wrapper {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .btn {

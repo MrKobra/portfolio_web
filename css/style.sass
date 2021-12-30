@@ -1,10 +1,5 @@
 $active: #1903b0
 
-body
-  &.open-popup
-    overflow-x: hidden
-    overflow-y: auto
-
 .btn
   color: #000000
   padding: 7px 0 10px
@@ -178,6 +173,13 @@ section
     &-card
       &_btn
         column-gap: 10px
+
+  .popup-portfolio_img
+    overflow: hidden
+    max-height: 100%
+    &-wrapper
+      overflow-y: auto
+      -webkit-overflow-scrolling: touch
 
   .btn
     width: 142px
