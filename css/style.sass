@@ -5,6 +5,7 @@ $active: #1903b0
   padding: 7px 0 10px
   width: 200px
   border: 2px solid $active
+  font-size: 16px
   &:hover
     background: $active
     color: #ffffff
@@ -32,18 +33,23 @@ section
       transition: all .2s linear
 
 .main-header
+  box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1)
+  transition: all .2s cubic-bezier(0.55, 0.055, 0.675, 0.19)
   &.fix
     position: fixed
     top: 0
     left: 0
     width: 100%
     z-index: 10
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.2)
   li
     &.nav-item.active
       a
         color: $active
 
 .about
+  .heading
+    margin-bottom: 30px
   p
     margin: 10px 0 0
     font-size: 18px
@@ -55,6 +61,8 @@ section
       list-style: none
       padding-left: 15px
       position: relative
+      font-size: 18px
+      line-height: 30px
       &:before
         content: ''
         width: 5px
@@ -115,4 +123,58 @@ section
   p
     text-align: center
     margin-bottom: 0
+    font-size: 14px
+
+.mfp-content 
+  .popup-portfolio_img
+    display: block
+.popup-portfolio_img
+  position: relative
+  display: none
+  .mfp-close
+    color: #ffffff
+    width: 50px
+    height: 50px
+    right: -7px
+  &-wrapper
+    text-align: center
+    padding: 50px 0
+  img
+    max-width: 100%
+
+@media (max-width: 768px)
+  .portfolio
+    &-card
+      flex-direction: column
+      align-items: flex-start
+      row-gap: 20px
+      &_link
+        flex-basis: auto
+      &_info
+        padding-left: 0
+
+@media (max-width: 480px)
+  section
+    padding: 40px 0
+    h2
+      font-size: 30px
+      padding-bottom: 7px
+
+  .about
+    p
+      font-size: 16px
+      line-height: 28px
+    ul
+      li
+        font-size: 16px
+        line-height: 28px
+
+  .portfolio
+    &-card
+      &_btn
+        column-gap: 10px
+
+  .btn
+    width: 142px
+    padding: 4px 0 6px
     font-size: 14px

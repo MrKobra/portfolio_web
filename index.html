@@ -14,7 +14,7 @@
     <div class="wrapper">
         <header class="main-header navbar-light bg-light">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-center">
                         <ul class="navbar-nav justify-content-center">
                             <li class="nav-item">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="portfolio-container">
                     <div class="portfolio-card">
-                        <a href="img/removal_big.png" class="portfolio-card_link">
+                        <a href="#portfolio_img" data-full="./img/removal_big.png" class="portfolio-card_link">
                             <div class="portfolio-card_img">
                                 <img src="img/removal_thumb.png" class="img-fluid" alt="Скриншот сайта">
                             </div>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="portfolio-card">
-                        <a href="img/kreslo-v-dom_big.png" class="portfolio-card_link">
+                        <a href="#portfolio_img" data-full="./img/kreslo-v-dom_big.png" class="portfolio-card_link">
                             <div class="portfolio-card_img">
                                 <img src="img/kreslo-v-dom_thumb.png" class="img-fluid" alt="Скриншот сайта">
                             </div>
@@ -123,6 +123,12 @@
             <p>&copy 2021</p>
         </div>
     </footer>
+
+    <div class="popup-portfolio_img container" id="portfolio_img">
+        <div class="popup-portfolio_img-wrapper">
+
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="lib/magnific-popup/jquery.magnific-popup.min.js"></script>

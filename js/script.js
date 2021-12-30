@@ -56,8 +56,17 @@ $(document).ready(function() {
 
     // Попап окно
     $('.portfolio-card_link').each(function(){
+        var full = $(this).data('full');
         $(this).magnificPopup({
-            type: 'image'
+            type: 'inline',
+            callbacks: {
+                open: function() {
+                    $('.popup-portfolio_img-wrapper').append('<img src="'+full+'">');
+                },
+                close: function() {
+                    $('.popup-portfolio_img-wrapper img').remove();
+                }
+            }
         });
     })
 })
