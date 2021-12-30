@@ -178,6 +178,7 @@ section h2:before {
   display: flex;
   column-gap: 15px;
   font-size: 16px;
+  align-items: center;
 }
 .stack ul li .check-icon {
   width: 30px;
@@ -327,6 +328,22 @@ section h2:before {
   }
   .main-header-mobile .mobile-nav-btn span:last-child {
     top: 22px;
+  }
+
+  .stack h2 {
+    font-size: 26px;
+  }
+  .stack ul li {
+    font-size: 16px;
+  }
+  .stack ul li .check-icon {
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+  }
+  .stack ul li .check-icon svg {
+    width: 15px;
+    height: 15px;
   }
 }
 
