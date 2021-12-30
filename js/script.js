@@ -53,6 +53,13 @@ $(document).ready(function() {
             scrollTop: $(href).offset().top - headerHeight
         }, 500);
     })
+
+    // Попап окно
+    $('.portfolio-card_link').each(function(){
+        $(this).magnificPopup({
+            type: 'image'
+        });
+    })
 })
 
 function getScrollSection(items) {
