@@ -46,6 +46,9 @@ section h2:before {
   z-index: 10;
   box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.2);
 }
+.main-header-mobile {
+  display: none;
+}
 .main-header li.nav-item.active a {
   color: #1903b0;
 }
@@ -207,13 +210,98 @@ section h2:before {
   }
   .popup-portfolio_img-wrapper {
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
   }
 
   .btn {
     width: 142px;
     padding: 4px 0 6px;
     font-size: 14px;
+  }
+
+  .main-header {
+    padding: 10px 0;
+  }
+  .main-header nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 40;
+    background: #f0f0f0;
+    align-items: flex-start;
+    padding: 44px 0;
+    transform: translateX(-100%);
+    transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    opacity: 0;
+  }
+  .main-header nav .navbar-collapse {
+    align-items: flex-start;
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  .main-header nav.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .main-header nav.show .collapse.position-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .main-header nav ul.navbar-nav {
+    flex-direction: column;
+  }
+  .main-header nav ul.navbar-nav li {
+    text-align: center;
+  }
+  .main-header-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-header-mobile .mobile-nav-logo span {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .main-header-mobile .mobile-nav-logo span:first-letter {
+    color: #1903b0;
+  }
+  .main-header-mobile .mobile-nav-btn {
+    width: 34px;
+    height: 24px;
+    position: relative;
+    z-index: 50;
+  }
+  .main-header-mobile .mobile-nav-btn.active span:first-child {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .main-header-mobile .mobile-nav-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .main-header-mobile .mobile-nav-btn.active span:last-child {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .main-header-mobile .mobile-nav-btn:hover {
+    cursor: pointer;
+  }
+  .main-header-mobile .mobile-nav-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #1903b0;
+    transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .main-header-mobile .mobile-nav-btn span:first-child {
+    top: 0;
+  }
+  .main-header-mobile .mobile-nav-btn span:nth-child(2) {
+    top: 11px;
+  }
+  .main-header-mobile .mobile-nav-btn span:last-child {
+    top: 22px;
   }
 }
 
