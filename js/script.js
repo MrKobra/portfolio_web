@@ -1,7 +1,7 @@
 const mobileWidth = 480;
+const items = ['#about', '#portfolio', '#contact', '#stack'];
 
 $(document).ready(function() {
-    var items = ['#about', '#portfolio', '#contact'];
     var scrollSection = getScrollSection(items);
 
     $(window).scroll(function(){
@@ -9,7 +9,7 @@ $(document).ready(function() {
         var windowHeight = $(window).height();
         var headerHeight = $('.main-header').outerHeight();
 
-        // Анимация при сколе
+        // Анимация при сколе у блока
         scrollSection.forEach(function (item, index) {
             // Анимация в блоке
             if(windowScroll >= item[1] - (windowHeight / 3) && windowScroll <= item[2] - (windowHeight / 3)) {
