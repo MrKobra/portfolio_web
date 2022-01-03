@@ -115,10 +115,21 @@ section
     margin-top: 30px
     ul
       padding: 0
+      display: flex
+      flex-direction: column
+      row-gap: 20px
       li
         list-style: none
-        line-height: 40px
         font-size: 18px
+        position: relative
+        padding-left: 30px
+        strong
+          display: block
+        svg
+          fill: $active
+          position: absolute
+          left: 0
+          top: 4px
         a
           color: #000000
           text-decoration: none

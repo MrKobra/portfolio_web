@@ -131,11 +131,24 @@ section h2:before {
 }
 .contact-container ul {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 .contact-container ul li {
   list-style: none;
-  line-height: 40px;
   font-size: 18px;
+  position: relative;
+  padding-left: 30px;
+}
+.contact-container ul li strong {
+  display: block;
+}
+.contact-container ul li svg {
+  fill: #1903b0;
+  position: absolute;
+  left: 0;
+  top: 4px;
 }
 .contact-container ul li a {
   color: #000000;
