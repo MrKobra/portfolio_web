@@ -61,6 +61,15 @@ section h2:before {
   font-size: 18px;
   line-height: 30px;
 }
+.about p a {
+  color: #1903b0;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.about p a:hover {
+  border-color: #1903b0;
+}
 .about ul {
   margin: 0;
   padding: 0;
@@ -289,9 +298,6 @@ section h2:before {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
-  }
-  .main-header-mobile .mobile-nav-logo span:first-letter {
-    color: #1903b0;
   }
   .main-header-mobile .mobile-nav-btn {
     width: 34px;

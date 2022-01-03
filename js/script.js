@@ -51,7 +51,7 @@ $(document).ready(function() {
     })
 
     // Плавная прокрутка до элемента
-    $('.main-header nav a').click(function(e){
+    $('.main-header nav a, .anchor').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var headerHeight = $('.main-header').outerHeight();
